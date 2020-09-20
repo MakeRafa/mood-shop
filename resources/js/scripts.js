@@ -35,4 +35,21 @@ for (let i=0; i<data.length; ++i) {
     button.innerHTML = "Add to Cart"
     newDiv.appendChild(button)
     itemsContainer.appendChild(newDiv)
+
+    const cart = []
+
+    function addItem(name, price) {
+        const item = {name: name, price: price, qty: 1}
+        cart.push(item)
+    }
+
+    function showItems() {
+        console.log( `You have ${cart.length} items in your cart!` )
+    }
+
+    addItem = ('Happiness', 5.99)
+    addItem = ('Tears', 5.99)        
+    addItem = ('Anger', 5.99)
+
+    showItems()
 }
