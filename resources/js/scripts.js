@@ -45,6 +45,9 @@ for (let i=0; i<data.length; ++i) {
 
     function showItems() {
         console.log( `You have ${cart.length} items in your cart!` )
+        for(let i =0; i <cart.length; i<=1 ) {
+            console.log(` ${ cart[i] } `) 
+        }
     }
 
     addItem = ('Happiness', 5.99)
